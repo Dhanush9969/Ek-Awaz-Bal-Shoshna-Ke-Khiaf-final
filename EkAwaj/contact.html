@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Contact – Ek Awaj Baal Shoshan Khilaf</title>
+  <meta name="description" content="Contact Ek Awaj Baal Shoshan Khilaf in Ludhiana. Report an incident, request counselling or volunteer. Call +91-7888801753."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="partials.js"></script>
+</head>
+<body data-page="contact">
+
+  <section class="page-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="container page-hero-content">
+      <span class="section-tag">Get Help · Report · Connect</span>
+      <h1 class="page-hero-title">We Are Here For You</h1>
+      <p class="page-hero-sub">Reach us confidentially. Every inquiry is handled with dignity, discretion, and care.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT MAIN -->
+  <section id="contact-main">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- LEFT: Info Cards -->
+        <div class="contact-info">
+          <h2 class="section-title" style="text-align:left;margin-bottom:32px;">Reach Us Directly</h2>
+
+          <div class="contact-card">
+            <div class="cc-icon"><i data-lucide="phone-call"></i></div>
+            <div class="cc-body">
+              <h4>Phone / WhatsApp</h4>
+              <a href="tel:+917888801753" class="cc-link">+91-7888801753</a>
+              <p>Available Mon–Sat, 9 AM – 7 PM IST</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="cc-icon emergency-cc"><i data-lucide="alert-circle"></i></div>
+            <div class="cc-body">
+              <h4>Emergency Childline</h4>
+              <a href="tel:1098" class="cc-link cc-emergency">1098</a>
+              <p>Free · 24/7 · Available across India</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="cc-icon"><i data-lucide="mail"></i></div>
+            <div class="cc-body">
+              <h4>Email</h4>
+              <a href="mailto:eabsk2024@gmail.com" class="cc-link">eabsk2024@gmail.com</a>
+              <p>We respond within 24 hours</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="cc-icon instagram-cc"><i data-lucide="instagram"></i></div>
+            <div class="cc-body">
+              <h4>Instagram</h4>
+              <a href="https://www.instagram.com/ekawajbaalshoshan" target="_blank" rel="noopener" class="cc-link">Ek Awaj Baal Shoshan Khilaf</a>
+              <p>Follow for awareness campaigns &amp; updates</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="cc-icon"><i data-lucide="map-pin"></i></div>
+            <div class="cc-body">
+              <h4>Location</h4>
+              <span class="cc-link">Ludhiana, Punjab, India</span>
+              <p>Serving Ludhiana district &amp; surrounding areas</p>
+            </div>
+          </div>
+
+          <div class="safety-note">
+            <i data-lucide="shield-check"></i>
+            <p><strong>Your safety is our priority.</strong> All communications are handled confidentially. We will never share your identity without explicit consent.</p>
+          </div>
+        </div>
+
+        <!-- RIGHT: Form -->
+        <div class="contact-form-wrap">
+          <div class="form-header">
+            <h2 class="section-title" style="text-align:left;">🔒 Confidential Message</h2>
+            <p style="color:var(--text-muted);font-size:.9rem;margin-top:8px;">Your identity is protected. All submissions are encrypted and treated with strict confidentiality.</p>
+          </div>
+
+          <form id="contact-form" action="https://formspree.io/f/eabsk2024" method="POST">
+            <input type="hidden" name="_subject" value="Ek Awaj – Confidential Inquiry"/>
+            <input type="hidden" name="_replyto" value="eabsk2024@gmail.com"/>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Your Name <span class="optional">(optional)</span></label>
+                <input type="text" name="name" id="form-name" placeholder="Name or Anonymous" class="form-input"/>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Contact <span class="required">*</span></label>
+                <input type="text" name="contact" id="form-email" placeholder="Email or Phone number" class="form-input" required/>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Inquiry Type <span class="required">*</span></label>
+              <select name="type" id="form-type" class="form-input form-select" required>
+                <option value="">— Select inquiry type —</option>
+                <option value="report">🚨 Report an Incident</option>
+                <option value="counselling">💬 Request Counselling</option>
+                <option value="workshop">🏫 Request a Workshop</option>
+                <option value="legal">⚖️ Legal Aid / POCSO Guidance</option>
+                <option value="volunteer">🤝 Volunteer / Partner</option>
+                <option value="media">📰 Media / Press Inquiry</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Your Message <span class="required">*</span></label>
+              <textarea name="message" id="form-message" placeholder="Please describe how we can help. Be as brief or detailed as you like — we will follow up." class="form-input form-textarea" rows="6" required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Preferred Contact Time <span class="optional">(optional)</span></label>
+              <input type="text" name="preferred_time" placeholder="e.g. Weekday mornings, After 6 PM" class="form-input"/>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit" id="form-submit-btn">
+              Send Securely 🔒
+            </button>
+
+            <div id="form-success" class="form-feedback success" style="display:none;">
+              ✅ Thank you. Your message has been received. We'll reach out within 24 hours.
+            </div>
+            <div id="form-error" class="form-feedback error" style="display:none;">
+              ❌ Something went wrong. Please call us directly at <strong>+91-7888801753</strong> or dial <strong>1098</strong>.
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- VOLUNTEER / PARTNER -->
+  <section id="volunteer-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Join the Movement</span>
+        <h2 class="section-title">Become Part of Ek Awaj</h2>
+        <p class="section-desc">Every voice counts. Here's how you can help us protect more children.</p>
+      </div>
+      <div class="volunteer-grid">
+        <div class="vol-card">
+          <div class="vol-icon"><i data-lucide="users"></i></div>
+          <h3>Volunteer</h3>
+          <p>Join our field teams for awareness campaigns, school programs, and community outreach across Ludhiana and Punjab.</p>
+          <a href="mailto:eabsk2024@gmail.com?subject=Volunteer Application" class="btn btn-outline" style="margin-top:16px;padding:10px 24px;font-size:.85rem;">Apply Now</a>
+        </div>
+        <div class="vol-card vol-card-featured">
+          <div class="vol-icon"><i data-lucide="handshake"></i></div>
+          <h3>Partner With Us</h3>
+          <p>Schools, corporations, hospitals, and NGOs — partner with us to amplify our reach and deepen our impact.</p>
+          <a href="mailto:eabsk2024@gmail.com?subject=Partnership Inquiry" class="btn btn-primary" style="margin-top:16px;padding:10px 24px;font-size:.85rem;">Get in Touch</a>
+        </div>
+        <div class="vol-card">
+          <div class="vol-icon"><i data-lucide="megaphone"></i></div>
+          <h3>Spread Awareness</h3>
+          <p>Follow &amp; share our Instagram. Talk to your community. Every conversation about child safety matters.</p>
+          <a href="https://www.instagram.com/ekawajbaalshoshan" target="_blank" class="btn btn-outline" style="margin-top:16px;padding:10px 24px;font-size:.85rem;">Follow on Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
